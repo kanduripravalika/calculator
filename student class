@@ -1,0 +1,28 @@
+class student:
+
+    def __init__(self,name,rollnumber):
+        self.name= name
+        self.rollnumber = rollnumber
+    #setters and getters
+    def set_name(self,name):
+        self.name = name
+    def get_name(self):
+        return self.name
+    def set_rollnumber(self,rollnumber):
+        self.rollnumber= rollnumber
+    def get_rollnumber(self):
+        return self.rollnumber
+    def display(self):
+        return f"name: {self.name} \nrollnumber : {self.rollnumber} "
+obj = student("edyoda","150423")
+print(obj.display())
+obj.set_name("edyoda")
+print(obj.get_name())
+obj.set_rollnumber("150423")
+print(obj.get_rollnumber())
+
+excepted output:
+name: edyoda 
+rollnumber : 150423 
+edyoda
+150423
