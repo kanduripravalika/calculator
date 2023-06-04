@@ -1,0 +1,44 @@
+class Bank_Account:
+    def __init__(self):
+        self.balance=0
+        print("")
+    def name(self):
+        self.name=""
+        print("\nAshish")
+    def deposit(self):
+        amount=float(input("\nEnter amount Deposited: "))
+        self.balance += amount
+        print("\n Amount Deposited:",amount)
+    def display(self):
+        print("\n Net Available Balance=",self.balance)
+class SavingsAccount():
+    
+    def simple_interest(p,t,r):
+        print('The principal is', p)
+        print('The time period is', t)
+        print('The rate of interest is',r)
+        si = (p * t * r)/100
+        print('The Simple Interest is', si)
+        return si
+    simple_interest(5000, 1, 5)
+
+s = Bank_Account()
+s.name()
+s.deposit()
+s.display()
+
+excepted output:
+
+The principal is 5000
+The time period is 1
+The rate of interest is 5
+The Simple Interest is 250.0
+
+
+Ashish
+
+Enter amount Deposited: 5000
+
+ Amount Deposited: 5000.0
+
+ Net Available Balance= 5000.0
