@@ -1,0 +1,84 @@
+class Bank_Account:
+    
+    def __init__(self):
+        self.balance=0
+        print("")
+    def name(self):
+        self.name=""
+        print("\nAshish")
+        
+    def initiallydeposit(self):
+        amount=float(input("\nEnter amount initiallyDeposited: "))
+        self.balance += amount
+        print("\n Amount initiallyDeposited:",amount)
+        
+    def display(self):
+        print("\n Net Available Balance=",self.balance)
+        
+    def deposit1(self):
+        amount=float(input("Enter amount to be Deposited: "))
+        self.balance += amount
+        print("\n Amount Deposited:",amount)
+        
+    def display(self):
+        print("\n Net Available Balance=",self.balance) 
+        
+    def withdraw(self):
+        amount = float(input("Enter amount to be Withdrawn: "))
+        if self.balance>=amount:
+            self.balance-=amount
+            print("\n You Withdrew:", amount)
+        else:
+            print("\n Insufficient balance  ")
+ 
+    def display(self):
+        print("\n Net Available Balance=",self.balance)
+        
+class SavingsAccount():
+    
+    def simple_interest(p,t,r):
+        print('The principal is', p)
+        print('The time period is', t)
+        print('The rate of interest is',r)     
+        si = (p * t * r)/100
+        print('The Simple Interest is', si)
+        return si
+    simple_interest(2000, 1, 5)
+    
+    
+s = Bank_Account()
+s.name()
+s.initiallydeposit()
+s.display()
+s.deposit1()
+s.display()
+s.withdraw()
+s.display()
+
+excepted output:
+
+The principal is 2000
+The time period is 1
+The rate of interest is 5
+The Simple Interest is 100.0
+
+
+Ashish
+
+Enter amount initiallyDeposited: 2000
+
+ Amount initiallyDeposited: 2000.0
+
+ Net Available Balance= 2000.0
+Enter amount to be Deposited: 500
+
+ Amount Deposited: 500.0
+
+ Net Available Balance= 2500.0
+Enter amount to be Withdrawn: 1000
+
+ You Withdrew: 1000.0
+
+ Net Available Balance= 1500.0
+1
+​
